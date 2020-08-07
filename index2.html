@@ -11,6 +11,10 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="style2.css">
   <script src="process.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
  
   <link href="https://fonts.googleapis.com/css2?family= Roboto+Condensed &display=swap"
 rel="stylesheet"> 
@@ -32,20 +36,24 @@ rel="stylesheet">
             $(".navbar").css('box-shadow' ,"none"); 	
         }
     });
-    $(function () {
-  $('[data-toggle="popover"]').popover()
+    
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
 });
+     
+      
 
 
 
-$(function () {
-  $( '.s-circle1').popover({
-    container: '.tradecol'
-   
-  });
-  $('.popover').css("background-color","black");
-});
-$('.popover-content').css("background-color", "black");
+
+
+  
+$('.imgwrapper5').on({mouseenter:function(){
+  $('.c-tag').addClass("animate__animated animate__bounce")
+},});
+$('.imgwrapper5').on({mouseleave:function(){
+  $('.c-tag').removeClass("animate__animated animate__bounce")
+},});
 
 
 $('.s-circle1').click(function(){
@@ -72,12 +80,20 @@ $('.gray-pack1').on({mouseleave:function(){
 
 },});
 
+$('.imgwrapper1').on({mouseenter:function(){
+  
+},
+
+})
+
 
   });
   
 </script>
 <style>
-  
+  .popback{
+    background-color: black;
+  }
 </style>
 </head>
 <body>
@@ -128,7 +144,7 @@ $('.gray-pack1').on({mouseleave:function(){
     aria-haspopup="true" aria-expanded="false" style="color:white;">
       USD
     </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width:auto;z-index:2031" >
       <a class="dropdown-item" href="#">ESD</a>
       <a class="dropdown-item" href="#">USD</a>
      
@@ -207,7 +223,7 @@ $('.gray-pack1').on({mouseleave:function(){
         <div class="row ml-0 mr-0" style="height:100%; width:100%;align-items: center;justify-content: center;">
           <div class="cen-hed-div ">
             <h3 style="line-height:30px ; color:white"> Mega Summer Sale</h3>
-            <h1> NEW ARRIVAL COLLECTIONS</h1>
+            <h1  class="animate__animated animate__bounce"> NEW ARRIVAL COLLECTIONS</h1>
           <center>  <button>
               Shop Now
             </button></center>
@@ -289,8 +305,8 @@ $('.gray-pack1').on({mouseleave:function(){
       
       <div class="black-bordr">
         <div class="imgwrapper5">
-      <div class="c-tag" style="left:50% ; margin-left: -100px; ">
-        FORMAL PANT
+      <div class="c-tag " style="left:50% ; margin-left: -100px; ">
+     <a href="#">  FORMAL PANT</a> 
     
       </div>
     </div></div>
@@ -351,19 +367,18 @@ $('.gray-pack1').on({mouseleave:function(){
 <div class="row ml-0 mr-0" style="justify-content: center; flex-wrap: nowrap;">
   <div class="col-md-2" style="display:flex;justify-content: center;">
     
-  <button type="button" class="btn btn-secondary s-circle1" 
-  data-container="body" data-toggle="popover" data-placement="top" 
-  data-content="cyan">
+    <button type="button " class="btn btn-secondary s-circle1" data-toggle="tooltip" 
+    data-placement="top" title="Gray">
       
-      </button>
+    </button>
     
   </div>
   <div class="col-md-2" style="display:flex;justify-content: center;">
     
 
       <button type="button" class="btn btn-secondary s-circle2" 
-      data-container="body" data-toggle="popover" data-placement="top" 
-      data-content="gray">
+       data-toggle="tooltip" data-placement="top" 
+      title="gray">
           
           </button>
       
@@ -372,8 +387,8 @@ $('.gray-pack1').on({mouseleave:function(){
   <div class="col-md-2" style="display:flex;justify-content: center;">
     
       <button type="button" class="btn btn-secondary s-circle3" 
-      data-container="body" data-toggle="popover" data-placement="top" 
-      data-content="gray">
+       data-toggle="tooltip" data-placement="top" 
+      title="gray">
           
           </button>
       
@@ -382,8 +397,8 @@ $('.gray-pack1').on({mouseleave:function(){
   <div class="col-md-2" style="display:flex;justify-content: center;">
     
       <button type="button" class="btn btn-secondary s-circle4" 
-      data-container="body" data-toggle="popover" data-placement="top" 
-      data-content="gray">
+      data-toggle="tooltip" data-placement="top" 
+     title="gray">
           
           </button>
       

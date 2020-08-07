@@ -18,6 +18,7 @@
 background-color: black;
 height:50px;
 color:white;
+z-index:2021;
 }
 .up-black ul li{
     padding:0px 10px;
@@ -144,6 +145,10 @@ border:none;
     display:block;
 
 }
+.gray-pack1:hover .c-tag,.gray-pack2:hover .c-tag,.gray-pack3:hover .c-tag{
+   
+    display: block;
+}
 .gray-pack1 {
     background-image: url("./assets/denim1.jpg");
     background-size: cover;
@@ -180,25 +185,36 @@ border:none;
 
 .c-tag{
     background-color:rgb(240, 240, 240,0.5);
-    color: rgb(21, 29, 77,0.5);
+   
     padding:20px;
-font-size: 25px;
-font-weight: 600;
+
     top:70%;
     position: absolute;
    left:15%;
+   display:none;
+}
+.ctag a{
+    font-size: 25px;
+font-weight: 600;
+color: rgba(14, 20, 53, 0.5);
+cursor: pointer;
+text-decoration: none;
+
 }
 
 .c-tag1{
     background-color:rgb(240, 240, 240,0.5);
-    color: rgb(21, 29, 77,0.5);
+    color:  rgba(14, 20, 53, 0.5);
     padding:20px;
 font-size: 25px;
 font-weight: 600;
+display:none;
     top:70%;
     position: absolute;
    right:15%;
 }
+
+
 .manufacturing{
     margin-top:100px ;
 
@@ -212,7 +228,7 @@ font-weight: 600;
    background: linear-gradient(to right,rgb(219, 219, 219) ,white);
    
    margin-top:320px; 
-   z-index:100px;
+   z-index:100;
   
     border:2px solid rgb(255, 0, 128,0.7);
     height:600px;
@@ -221,11 +237,13 @@ font-weight: 600;
   
 }
 .imgwrapper5{
+   
+    margin:5px;
+    height:100%;
+    position:relative;
     background-image: url("./assets/formal\ pants.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin:5px;
-    
    
    
 
@@ -241,11 +259,11 @@ font-weight: 600;
     height:600px;
     z-index:50px;
 }
-.imgwrapper5{
-    margin:10px;
-    height:600px;
-    z-index:100;
+.imgwrapper1:hover .c-tag,.imgwrapper3:hover .c-tag,.imgwrapper2:hover .c-tag1,.imgwrapper4:hover .c-tag1 ,
+.imgwrapper5:hover .c-tag{
+    display:block;
 }
+
 .imgwrapper1{
     background-image: url("./assets/kurta\ pajama.jpg");
     
@@ -300,19 +318,13 @@ font-weight: 600;
         left:0%;
         margin:10px 25px;
         background:linear-gradient(to right,rgb(219, 219, 219) ,white); 
-        width:50%;
+        width:100%;
         padding:2px;
 
        
 }
    
-.manurow{
-   
-    flex-direction: column-reverse;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
+
 }
 @media screen and (min-width:1300px){
     .fivdiv{
