@@ -322,24 +322,18 @@ a:hover{
 
 
 @media only screen and (max-width:768px){
-    .ul-flex{
-        flex-direction: column;
-    }
-    .fivdiv{
-        position:relative;
-        left:0%;
-        margin:10px 25px ;
-        padding:2px;
-        background:linear-gradient(to right,rgb(219, 219, 219) ,white); 
-        width:100%;
-       
-}
+    
    
 .cen-hed-div{
     width:auto;
 }
+.imgwrapper1{
+    height:400px;
+}
+
 
 }
+/*
 @media only screen and ( min-width:768px )and (max-width:1200px){
 
 
