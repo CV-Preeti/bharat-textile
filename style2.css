@@ -75,6 +75,12 @@ border:none;
     color:white;
 
 }
+.logoimg{
+
+background-image: url("assets/glowsign2s.png");
+ background-size: cover;
+background-position: center;
+width:200px ;height:80px}
 
 
 
@@ -329,6 +335,10 @@ a:hover{
 }
 .imgwrapper1{
     height:400px;
+}
+.logoimg{
+   display:block;
+   width:100%;
 }
 
 
